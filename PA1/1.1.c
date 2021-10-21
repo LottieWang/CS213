@@ -4,7 +4,7 @@
 
 int main (int argc, char *argv[]) {
     int nthreads, tid;
-
+    omp_set_num_threads(32);
 // Fork a team of threads with their own copies of variables
     #pragma omp parallel private(nthreads, tid)
     {

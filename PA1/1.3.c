@@ -12,7 +12,7 @@ int main (int argc, char *argv[]) {
         b[i] = i + 22.35;
         c[i] = d[i] = 0.0;
     }
-    
+    omp_set_num_threads(8);
     #pragma omp parallel shared(a,b,c,d,nthreads) private(i,tid)
     {
         tid = omp_get_thread_num();
