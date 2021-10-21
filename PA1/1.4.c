@@ -21,7 +21,7 @@ void MM_outer(int n_thread){
     int chunk = CHUNKSIZE;
     for (int t = 0; t<10; t++){
         start = omp_get_wtime(); //start time measurement
-        #pragma omp parallel shared(A,B,C,chunk) private(i)
+        #pragma omp parallel shared(A,B,C,chunk) private(i, j, k, sum)
         {
             #pragma omp for schedule(static, chunk)
             for (i = 0; i < N; i++) {
@@ -61,7 +61,7 @@ void MM_middle(int n_thread){
     for (int t = 0; t<10; t++){
         start = omp_get_wtime(); //start time measurement
         for (i = 0; i < N; i++) {
-            #pragma omp parallel for schedule(static, chunk)
+            #pragma omp parallel for schedule(static, chunk) private(j, k, sum)
             for (j = 0; j < N; j++) {
                 sum = 0;
                 for (k=0; k < N; k++) {
