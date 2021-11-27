@@ -1,6 +1,7 @@
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <string.h>
 
 struct CSC{
@@ -34,6 +35,7 @@ int comp (const void * elem1, const void * elem2)
     if (f.j < s.j) return -1;
     return 0;
 }
+
 
 int readCSC(const char* filename, struct CSC * csc){
     FILE* input_file = fopen(filename, "r");
@@ -80,13 +82,14 @@ int writeArray(char* name, double* y, int n){
 }
 
 void MatrixVecMul(struct CSC matrix, double* x, double* y){
-    // #pragma omp parallel for shared(y)
+    #pragma omp parallel for shared(y)
     for (size_t i = 0; i<matrix.n2; i++){y[i]=0;}
 
     #pragma omp parallel for shared(matrix, x, y)
     for (size_t j = 0; j< matrix.n2; j++){
         for (size_t offset = matrix.col_index[j]; offset < matrix.col_index[j+1]; offset++){
             int i = matrix.raw_index[offset];
+            #pragma omp atomic update
             y[i] += matrix.value[offset]*x[j];
         }
     }
@@ -101,6 +104,13 @@ int main(int argc, char** argv){
     char* InputName = argv[1];
     int n_iters = atoi(argv[2]);
     int n_threads = atoi(argv[3]);
+    bool print_output;
+    if (argc == 4) {
+        print_output=false;
+    }else{
+        print_output=true;
+    }
+
     // generate the output file name
     char OutName[20];
     sprintf(OutName, "CSCVec%c.txt",InputName[strlen(InputName)-5]);
@@ -120,7 +130,9 @@ int main(int argc, char** argv){
     }
     end = omp_get_wtime(); //end time measurement
     swap_pt(&x,&y);
-    writeArray(OutName, y, matrix.n2);
+    if (print_output){
+        writeArray(OutName, y, matrix.n2);
+    }
     printf("Time of OpenMP CSC SpMV: %f seconds\n", end-start);
     return 0;
 }

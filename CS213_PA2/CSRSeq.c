@@ -1,6 +1,7 @@
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <string.h>
 
 struct CSR{
@@ -70,6 +71,12 @@ int main(int argc, char** argv){
     char* InputName = argv[1];
     int n_iters = atoi(argv[2]);    // m
     int n_threads = atoi(argv[3]);  // n
+    bool print_output;
+    if (argc == 4) {
+        print_output=false;
+    }else{
+        print_output=true;
+    }
     // generate the output file name
     char OutName[20];
     sprintf(OutName, "CSRVec%c.txt",InputName[strlen(InputName)-5]);
@@ -90,7 +97,9 @@ int main(int argc, char** argv){
     }
     end = omp_get_wtime(); //end time measurement
     swap_pt(&x,&y);
-    writeArray(OutName, y, matrix.n2);
+    if (print_output){
+        writeArray(OutName, y, matrix.n2);
+    }
     printf("Time of Squential CSR SpMV: %f seconds\n", end-start);
     return 0;
 }
