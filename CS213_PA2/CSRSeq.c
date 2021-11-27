@@ -9,11 +9,11 @@ struct CSR{
     int m;  // number of non zero elements
     int* col_index;     // m
     int* raw_index;     // n1+1
-    float* value;      // m
+    double* value;      // m
 };
 
-void swap_pt(float** A, float** B){
-    float* temp = *A;
+void swap_pt(double** A, double** B){
+    double* temp = *A;
     *A = *B;
     *B = temp;
 }
@@ -24,13 +24,13 @@ int readCSR(const char* filename, struct CSR * csr){
     fscanf(input_file, "%d %d %d ",&(csr->n1),&(csr->n2),&(csr->m));
     csr->col_index = calloc(csr->m ,sizeof(int));
     csr->raw_index = calloc((csr->n1)+1, sizeof(int));
-    csr->value = calloc((csr->m), sizeof(float));
+    csr->value = calloc((csr->m), sizeof(double));
     // for (size_t i = 0; i<csr.n1+1; i++){if (csr.raw_index[i]!= 0){printf("not initialized to zero\n");}}
     int i_index, j_index;
-    float v;
+    double v;
     
     for (size_t i = 0; i<csr->m; i++){
-        fscanf(input_file, "%d %d %f ", &i_index, &j_index, &v);
+        fscanf(input_file, "%d %d %lf ", &i_index, &j_index, &v);
         csr->raw_index[i_index]++;
         csr->col_index[i] = j_index-1; // index from 1
         csr->value[i] = v;
@@ -43,18 +43,18 @@ int readCSR(const char* filename, struct CSR * csr){
     return 0;
 }
 
-int writeArray(char* name, float* y, int n){
+int writeArray(char* name, double* y, int n){
     FILE *fp;
     fp = fopen(name, "w+");
     for (size_t i = 0; i<n; i++){
-        fprintf(fp, "%f\n", y[i]);
+        fprintf(fp, "%lf\n", y[i]);
     }
     fclose(fp);
 }
 
-void MatrixVecMul(struct CSR matrix, float* x, float* y){
+void MatrixVecMul(struct CSR matrix, double* x, double* y){
     for (size_t i = 0; i<matrix.n1; i++){
-        float sum = 0;
+        double sum = 0;
         // printf("y[%ld]\n", i);
         for (size_t offset = matrix.raw_index[i]; offset<matrix.raw_index[i+1]; offset++){
             int j = matrix.col_index[offset];
@@ -68,8 +68,8 @@ void MatrixVecMul(struct CSR matrix, float* x, float* y){
 int main(int argc, char** argv){
     if (argc < 4) {printf("usage: ./spmv matrixFileName m n\n"); return 0;}
     char* InputName = argv[1];
-    int n_iters = atoi(argv[2]);
-    int n_threads = atoi(argv[3]);
+    int n_iters = atoi(argv[2]);    // m
+    int n_threads = atoi(argv[3]);  // n
     // generate the output file name
     char OutName[20];
     sprintf(OutName, "CSRVec%c.txt",InputName[strlen(InputName)-5]);
@@ -79,8 +79,8 @@ int main(int argc, char** argv){
     if (readCSR(InputName, &matrix) != 0) {printf("read file fail\n"); return 0;}
     
     // initialize the vector
-    float* x = malloc(sizeof(float)*matrix.n2);
-    float* y = malloc(sizeof(float)*matrix.n2);
+    double* x = malloc(sizeof(double)*matrix.n2);
+    double* y = malloc(sizeof(double)*matrix.n2);
     for (size_t i = 0; i<matrix.n2; i++){x[i]=1;}
     // calling the matrix vector multiplication
     for (int t = 0; t<n_iters; t++){

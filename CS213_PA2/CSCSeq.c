@@ -8,17 +8,17 @@ struct CSC{
     int m;  // number of non zero elements
     int* raw_index;     // m
     int* col_index;     // n2+1
-    float* value;      // m
+    double* value;      // m
 };
 
 struct element{
     int i;
     int j;
-    float value;
+    double value;
 };
 
-void swap_pt(float** A, float** B){
-    float* temp = *A;
+void swap_pt(double** A, double** B){
+    double* temp = *A;
     *A = *B;
     *B = temp;
 }
@@ -41,10 +41,10 @@ int readCSC(const char* filename, struct CSC * csc){
     struct element * e_list = calloc(csc->m ,sizeof(struct element));
     
     int i_index, j_index;
-    float v;
+    double v;
 
     for (size_t i = 0; i<csc->m; i++){
-        fscanf(input_file, "%d %d %f ", &i_index, &j_index, &v);
+        fscanf(input_file, "%d %d %lf ", &i_index, &j_index, &v);
         struct element e;
         e.i = i_index; e.j=j_index; e.value = v;
         e_list[i] = e;
@@ -55,7 +55,7 @@ int readCSC(const char* filename, struct CSC * csc){
 
     csc->col_index = calloc((csc->n2)+1 ,sizeof(int));
     csc->raw_index = calloc((csc->m), sizeof(int));
-    csc->value = calloc((csc->m), sizeof(float));
+    csc->value = calloc((csc->m), sizeof(double));
 
     for (size_t i = 0; i<csc->m; i++){
         csc->raw_index[i] = e_list[i].i -1; // index from 1
@@ -69,16 +69,16 @@ int readCSC(const char* filename, struct CSC * csc){
     return 0;
 }
 
-int writeArray(char* name, float* y, int n){
+int writeArray(char* name, double* y, int n){
     FILE *fp;
     fp = fopen(name, "w+");
     for (size_t i = 0; i<n; i++){
-        fprintf(fp, "%f\n", y[i]);
+        fprintf(fp, "%lf\n", y[i]);
     }
     fclose(fp);
 }
 
-void MatrixVecMul(struct CSC matrix, float* x, float* y){
+void MatrixVecMul(struct CSC matrix, double* x, double* y){
     for (size_t i = 0; i<matrix.n2; i++){y[i]=0;}
     for (size_t j = 0; j< matrix.n2; j++){
         // printf("colum %ld: %d %d\n", j, matrix.col_index[j], matrix.col_index[j+1]);
@@ -107,8 +107,8 @@ int main(int argc, char** argv){
     struct CSC matrix;
     if (readCSC(InputName, &matrix) != 0) {printf("read file fail\n"); return 0;}
     // initialize the vector
-    float* x = malloc(sizeof(float)*matrix.n2);
-    float* y = malloc(sizeof(float)*matrix.n2);
+    double* x = malloc(sizeof(double)*matrix.n2);
+    double* y = malloc(sizeof(double)*matrix.n2);
     for (size_t i = 0; i<matrix.n2; i++){x[i]=1;}
     // calling the matrix vector multiplication
     for (int t = 0; t<n_iters; t++){
