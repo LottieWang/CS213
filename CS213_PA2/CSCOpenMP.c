@@ -80,7 +80,10 @@ int writeArray(char* name, double* y, int n){
 }
 
 void MatrixVecMul(struct CSC matrix, double* x, double* y){
+    // #pragma omp parallel for shared(y)
     for (size_t i = 0; i<matrix.n2; i++){y[i]=0;}
+
+    #pragma omp parallel for shared(matrix, x, y)
     for (size_t j = 0; j< matrix.n2; j++){
         for (size_t offset = matrix.col_index[j]; offset < matrix.col_index[j+1]; offset++){
             int i = matrix.raw_index[offset];
@@ -118,6 +121,6 @@ int main(int argc, char** argv){
     end = omp_get_wtime(); //end time measurement
     swap_pt(&x,&y);
     writeArray(OutName, y, matrix.n2);
-    printf("Time of Squential CSC SpMV: %f seconds\n", end-start);
+    printf("Time of OpenMP CSC SpMV: %f seconds\n", end-start);
     return 0;
 }

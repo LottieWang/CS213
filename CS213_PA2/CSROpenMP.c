@@ -53,13 +53,12 @@ int writeArray(char* name, double* y, int n){
 }
 
 void MatrixVecMul(struct CSR matrix, double* x, double* y){
+    #pragma omp parallel for
     for (size_t i = 0; i<matrix.n1; i++){
         double sum = 0;
-        // printf("y[%ld]\n", i);
         for (size_t offset = matrix.raw_index[i]; offset<matrix.raw_index[i+1]; offset++){
             int j = matrix.col_index[offset];
             sum += matrix.value[offset]*x[j];
-            // printf("%f * %f \n", matrix.value[offset], x[j]);
         }
         y[i]=sum;
     }
@@ -71,6 +70,7 @@ int main(int argc, char** argv){
     int n_iters = atoi(argv[2]);    // m
     int n_threads = atoi(argv[3]);  // n
     // generate the output file name
+    omp_set_num_threads(n_threads);//set number of threads here
     char OutName[20];
     sprintf(OutName, "CSRVec%c.txt",InputName[strlen(InputName)-5]);
     double start, end; // used for timing
@@ -91,6 +91,6 @@ int main(int argc, char** argv){
     end = omp_get_wtime(); //end time measurement
     swap_pt(&x,&y);
     writeArray(OutName, y, matrix.n2);
-    printf("Time of Squential CSR SpMV: %f seconds\n", end-start);
+    printf("Time of OpenMP CSR SpMV: %f seconds\n", end-start);
     return 0;
 }
