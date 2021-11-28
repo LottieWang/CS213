@@ -100,11 +100,6 @@ int main(int argc, char** argv){
     int n_iters = atoi(argv[2]);
     int n_threads = atoi(argv[3]);
     bool print_output;
-    if (argc == 4) {
-        print_output=false;
-    }else{
-        print_output=true;
-    }
 
     // generate the output file name
     char OutName[20];
@@ -125,9 +120,7 @@ int main(int argc, char** argv){
     }
     end = omp_get_wtime(); //end time measurement
     swap_pt(&x,&y);
-    if (print_output){
-        writeArray(OutName, y, matrix.n2);
-    }
+    writeArray(OutName, y, matrix.n2);
     printf("Time of Squential CSC SpMV: %f seconds\n", end-start);
     return 0;
 }
