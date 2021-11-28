@@ -1,0 +1,580 @@
+-------------------
+CSR Sequential Test
+**** Matrix 1 ****
+Time of Squential CSR SpMV: 0.000270 seconds
+Time of Squential CSR SpMV: 0.000271 seconds
+Time of Squential CSR SpMV: 0.000365 seconds
+Time of Squential CSR SpMV: 0.000271 seconds
+Time of Squential CSR SpMV: 0.000276 seconds
+Time of Squential CSR SpMV: 0.000271 seconds
+Time of Squential CSR SpMV: 0.000271 seconds
+Time of Squential CSR SpMV: 0.000270 seconds
+Time of Squential CSR SpMV: 0.000271 seconds
+Time of Squential CSR SpMV: 0.000271 seconds
+Time of Squential CSR SpMV: 0.000270 seconds
+**** Matrix 2 ****
+Time of Squential CSR SpMV: 0.003906 seconds
+Time of Squential CSR SpMV: 0.004082 seconds
+Time of Squential CSR SpMV: 0.003920 seconds
+Time of Squential CSR SpMV: 0.003963 seconds
+Time of Squential CSR SpMV: 0.003941 seconds
+Time of Squential CSR SpMV: 0.003915 seconds
+Time of Squential CSR SpMV: 0.003955 seconds
+Time of Squential CSR SpMV: 0.003903 seconds
+Time of Squential CSR SpMV: 0.003884 seconds
+Time of Squential CSR SpMV: 0.003884 seconds
+Time of Squential CSR SpMV: 0.003860 seconds
+**** Matrix 3 ****
+Time of Squential CSR SpMV: 0.023726 seconds
+Time of Squential CSR SpMV: 0.024344 seconds
+Time of Squential CSR SpMV: 0.025136 seconds
+Time of Squential CSR SpMV: 0.023960 seconds
+Time of Squential CSR SpMV: 0.023584 seconds
+Time of Squential CSR SpMV: 0.025240 seconds
+Time of Squential CSR SpMV: 0.023564 seconds
+Time of Squential CSR SpMV: 0.023305 seconds
+Time of Squential CSR SpMV: 0.024576 seconds
+Time of Squential CSR SpMV: 0.023870 seconds
+Time of Squential CSR SpMV: 0.025117 seconds
+-------------------
+CSR OpenMP Test with 1 threads
+**** Matrix 1 ****
+Time of OpenMP CSR SpMV: 0.000373 seconds
+Time of OpenMP CSR SpMV: 0.000382 seconds
+Time of OpenMP CSR SpMV: 0.000384 seconds
+Time of OpenMP CSR SpMV: 0.000405 seconds
+Time of OpenMP CSR SpMV: 0.000365 seconds
+Time of OpenMP CSR SpMV: 0.000367 seconds
+Time of OpenMP CSR SpMV: 0.000365 seconds
+Time of OpenMP CSR SpMV: 0.000404 seconds
+Time of OpenMP CSR SpMV: 0.000396 seconds
+Time of OpenMP CSR SpMV: 0.000373 seconds
+Time of OpenMP CSR SpMV: 0.000416 seconds
+-------------------
+CSR OpenMP Test with 2 threads
+**** Matrix 1 ****
+Time of OpenMP CSR SpMV: 0.000263 seconds
+Time of OpenMP CSR SpMV: 0.000266 seconds
+Time of OpenMP CSR SpMV: 0.000282 seconds
+Time of OpenMP CSR SpMV: 0.000272 seconds
+Time of OpenMP CSR SpMV: 0.000265 seconds
+Time of OpenMP CSR SpMV: 0.000270 seconds
+Time of OpenMP CSR SpMV: 0.000264 seconds
+Time of OpenMP CSR SpMV: 0.000259 seconds
+Time of OpenMP CSR SpMV: 0.000303 seconds
+Time of OpenMP CSR SpMV: 0.000285 seconds
+Time of OpenMP CSR SpMV: 0.000273 seconds
+-------------------
+CSR OpenMP Test with 4 threads
+**** Matrix 1 ****
+Time of OpenMP CSR SpMV: 0.000287 seconds
+Time of OpenMP CSR SpMV: 0.000340 seconds
+Time of OpenMP CSR SpMV: 0.000265 seconds
+Time of OpenMP CSR SpMV: 0.000250 seconds
+Time of OpenMP CSR SpMV: 0.000509 seconds
+Time of OpenMP CSR SpMV: 0.000302 seconds
+Time of OpenMP CSR SpMV: 0.000274 seconds
+Time of OpenMP CSR SpMV: 0.000259 seconds
+Time of OpenMP CSR SpMV: 0.000244 seconds
+Time of OpenMP CSR SpMV: 0.000261 seconds
+Time of OpenMP CSR SpMV: 0.000306 seconds
+-------------------
+CSR OpenMP Test with 8 threads
+**** Matrix 1 ****
+Time of OpenMP CSR SpMV: 0.000538 seconds
+Time of OpenMP CSR SpMV: 0.000740 seconds
+Time of OpenMP CSR SpMV: 0.000476 seconds
+Time of OpenMP CSR SpMV: 0.000470 seconds
+Time of OpenMP CSR SpMV: 0.002053 seconds
+Time of OpenMP CSR SpMV: 0.000599 seconds
+Time of OpenMP CSR SpMV: 0.000529 seconds
+Time of OpenMP CSR SpMV: 0.000497 seconds
+Time of OpenMP CSR SpMV: 0.000576 seconds
+Time of OpenMP CSR SpMV: 0.001190 seconds
+Time of OpenMP CSR SpMV: 0.000514 seconds
+-------------------
+CSR OpenMP Test with 16 threads
+**** Matrix 1 ****
+Time of OpenMP CSR SpMV: 0.005931 seconds
+Time of OpenMP CSR SpMV: 0.006178 seconds
+Time of OpenMP CSR SpMV: 0.002802 seconds
+Time of OpenMP CSR SpMV: 0.008978 seconds
+Time of OpenMP CSR SpMV: 0.007554 seconds
+Time of OpenMP CSR SpMV: 0.007337 seconds
+Time of OpenMP CSR SpMV: 0.009037 seconds
+Time of OpenMP CSR SpMV: 0.005692 seconds
+Time of OpenMP CSR SpMV: 0.012146 seconds
+Time of OpenMP CSR SpMV: 0.010372 seconds
+Time of OpenMP CSR SpMV: 0.003877 seconds
+-------------------
+CSR OpenMP Test with 32 threads
+**** Matrix 1 ****
+Time of OpenMP CSR SpMV: 0.003354 seconds
+Time of OpenMP CSR SpMV: 0.003531 seconds
+Time of OpenMP CSR SpMV: 0.003654 seconds
+Time of OpenMP CSR SpMV: 0.004022 seconds
+Time of OpenMP CSR SpMV: 0.003719 seconds
+Time of OpenMP CSR SpMV: 0.003951 seconds
+Time of OpenMP CSR SpMV: 0.003703 seconds
+Time of OpenMP CSR SpMV: 0.003700 seconds
+Time of OpenMP CSR SpMV: 0.003914 seconds
+Time of OpenMP CSR SpMV: 0.003827 seconds
+Time of OpenMP CSR SpMV: 0.003673 seconds
+-------------------
+CSR OpenMP Test with 1 threads
+**** Matrix 2 ****
+Time of OpenMP CSR SpMV: 0.005310 seconds
+Time of OpenMP CSR SpMV: 0.008260 seconds
+Time of OpenMP CSR SpMV: 0.005270 seconds
+Time of OpenMP CSR SpMV: 0.005136 seconds
+Time of OpenMP CSR SpMV: 0.005171 seconds
+Time of OpenMP CSR SpMV: 0.005256 seconds
+Time of OpenMP CSR SpMV: 0.005341 seconds
+Time of OpenMP CSR SpMV: 0.005233 seconds
+Time of OpenMP CSR SpMV: 0.005188 seconds
+Time of OpenMP CSR SpMV: 0.005204 seconds
+Time of OpenMP CSR SpMV: 0.005177 seconds
+-------------------
+CSR OpenMP Test with 2 threads
+**** Matrix 2 ****
+Time of OpenMP CSR SpMV: 0.002759 seconds
+Time of OpenMP CSR SpMV: 0.002796 seconds
+Time of OpenMP CSR SpMV: 0.004312 seconds
+Time of OpenMP CSR SpMV: 0.002783 seconds
+Time of OpenMP CSR SpMV: 0.002950 seconds
+Time of OpenMP CSR SpMV: 0.002851 seconds
+Time of OpenMP CSR SpMV: 0.002728 seconds
+Time of OpenMP CSR SpMV: 0.002667 seconds
+Time of OpenMP CSR SpMV: 0.002823 seconds
+Time of OpenMP CSR SpMV: 0.002705 seconds
+Time of OpenMP CSR SpMV: 0.003302 seconds
+-------------------
+CSR OpenMP Test with 4 threads
+**** Matrix 2 ****
+Time of OpenMP CSR SpMV: 0.001778 seconds
+Time of OpenMP CSR SpMV: 0.001654 seconds
+Time of OpenMP CSR SpMV: 0.001583 seconds
+Time of OpenMP CSR SpMV: 0.001670 seconds
+Time of OpenMP CSR SpMV: 0.001463 seconds
+Time of OpenMP CSR SpMV: 0.001481 seconds
+Time of OpenMP CSR SpMV: 0.001644 seconds
+Time of OpenMP CSR SpMV: 0.001566 seconds
+Time of OpenMP CSR SpMV: 0.001625 seconds
+Time of OpenMP CSR SpMV: 0.001562 seconds
+Time of OpenMP CSR SpMV: 0.001531 seconds
+-------------------
+CSR OpenMP Test with 8 threads
+**** Matrix 2 ****
+Time of OpenMP CSR SpMV: 0.001134 seconds
+Time of OpenMP CSR SpMV: 0.000994 seconds
+Time of OpenMP CSR SpMV: 0.001408 seconds
+Time of OpenMP CSR SpMV: 0.001074 seconds
+Time of OpenMP CSR SpMV: 0.001222 seconds
+Time of OpenMP CSR SpMV: 0.001117 seconds
+Time of OpenMP CSR SpMV: 0.001190 seconds
+Time of OpenMP CSR SpMV: 0.001314 seconds
+Time of OpenMP CSR SpMV: 0.001403 seconds
+Time of OpenMP CSR SpMV: 0.001600 seconds
+Time of OpenMP CSR SpMV: 0.001240 seconds
+-------------------
+CSR OpenMP Test with 16 threads
+**** Matrix 2 ****
+Time of OpenMP CSR SpMV: 0.006427 seconds
+Time of OpenMP CSR SpMV: 0.006030 seconds
+Time of OpenMP CSR SpMV: 0.005721 seconds
+Time of OpenMP CSR SpMV: 0.007613 seconds
+Time of OpenMP CSR SpMV: 0.014729 seconds
+Time of OpenMP CSR SpMV: 0.026719 seconds
+Time of OpenMP CSR SpMV: 0.004398 seconds
+Time of OpenMP CSR SpMV: 0.004642 seconds
+Time of OpenMP CSR SpMV: 0.006074 seconds
+Time of OpenMP CSR SpMV: 0.009595 seconds
+Time of OpenMP CSR SpMV: 0.002707 seconds
+-------------------
+CSR OpenMP Test with 32 threads
+**** Matrix 2 ****
+Time of OpenMP CSR SpMV: 0.003695 seconds
+Time of OpenMP CSR SpMV: 0.004152 seconds
+Time of OpenMP CSR SpMV: 0.004007 seconds
+Time of OpenMP CSR SpMV: 0.006310 seconds
+Time of OpenMP CSR SpMV: 0.004215 seconds
+Time of OpenMP CSR SpMV: 0.004392 seconds
+Time of OpenMP CSR SpMV: 0.019724 seconds
+Time of OpenMP CSR SpMV: 0.004580 seconds
+Time of OpenMP CSR SpMV: 0.004397 seconds
+Time of OpenMP CSR SpMV: 0.004154 seconds
+Time of OpenMP CSR SpMV: 0.008856 seconds
+-------------------
+CSR OpenMP Test with 1 threads
+**** Matrix 3 ****
+Time of OpenMP CSR SpMV: 0.031488 seconds
+Time of OpenMP CSR SpMV: 0.031576 seconds
+Time of OpenMP CSR SpMV: 0.032898 seconds
+Time of OpenMP CSR SpMV: 0.031616 seconds
+Time of OpenMP CSR SpMV: 0.031396 seconds
+Time of OpenMP CSR SpMV: 0.031753 seconds
+Time of OpenMP CSR SpMV: 0.032093 seconds
+Time of OpenMP CSR SpMV: 0.031358 seconds
+Time of OpenMP CSR SpMV: 0.031172 seconds
+Time of OpenMP CSR SpMV: 0.032425 seconds
+Time of OpenMP CSR SpMV: 0.033363 seconds
+-------------------
+CSR OpenMP Test with 2 threads
+**** Matrix 3 ****
+Time of OpenMP CSR SpMV: 0.016251 seconds
+Time of OpenMP CSR SpMV: 0.016209 seconds
+Time of OpenMP CSR SpMV: 0.016145 seconds
+Time of OpenMP CSR SpMV: 0.016194 seconds
+Time of OpenMP CSR SpMV: 0.016741 seconds
+Time of OpenMP CSR SpMV: 0.015640 seconds
+Time of OpenMP CSR SpMV: 0.015822 seconds
+Time of OpenMP CSR SpMV: 0.016194 seconds
+Time of OpenMP CSR SpMV: 0.016801 seconds
+Time of OpenMP CSR SpMV: 0.016500 seconds
+Time of OpenMP CSR SpMV: 0.015950 seconds
+-------------------
+CSR OpenMP Test with 4 threads
+**** Matrix 3 ****
+Time of OpenMP CSR SpMV: 0.008877 seconds
+Time of OpenMP CSR SpMV: 0.008882 seconds
+Time of OpenMP CSR SpMV: 0.008380 seconds
+Time of OpenMP CSR SpMV: 0.008433 seconds
+Time of OpenMP CSR SpMV: 0.009172 seconds
+Time of OpenMP CSR SpMV: 0.008514 seconds
+Time of OpenMP CSR SpMV: 0.008919 seconds
+Time of OpenMP CSR SpMV: 0.011009 seconds
+Time of OpenMP CSR SpMV: 0.008772 seconds
+Time of OpenMP CSR SpMV: 0.008635 seconds
+Time of OpenMP CSR SpMV: 0.009559 seconds
+-------------------
+CSR OpenMP Test with 8 threads
+**** Matrix 3 ****
+Time of OpenMP CSR SpMV: 0.005038 seconds
+Time of OpenMP CSR SpMV: 0.004738 seconds
+Time of OpenMP CSR SpMV: 0.004760 seconds
+Time of OpenMP CSR SpMV: 0.004729 seconds
+Time of OpenMP CSR SpMV: 0.006052 seconds
+Time of OpenMP CSR SpMV: 0.004923 seconds
+Time of OpenMP CSR SpMV: 0.004883 seconds
+Time of OpenMP CSR SpMV: 0.005353 seconds
+Time of OpenMP CSR SpMV: 0.006411 seconds
+Time of OpenMP CSR SpMV: 0.008417 seconds
+Time of OpenMP CSR SpMV: 0.005137 seconds
+-------------------
+CSR OpenMP Test with 16 threads
+**** Matrix 3 ****
+Time of OpenMP CSR SpMV: 0.004631 seconds
+Time of OpenMP CSR SpMV: 0.005846 seconds
+Time of OpenMP CSR SpMV: 0.004389 seconds
+Time of OpenMP CSR SpMV: 0.005848 seconds
+Time of OpenMP CSR SpMV: 0.010832 seconds
+Time of OpenMP CSR SpMV: 0.009830 seconds
+Time of OpenMP CSR SpMV: 0.012061 seconds
+Time of OpenMP CSR SpMV: 0.008091 seconds
+Time of OpenMP CSR SpMV: 0.015412 seconds
+Time of OpenMP CSR SpMV: 0.010109 seconds
+Time of OpenMP CSR SpMV: 0.013388 seconds
+-------------------
+CSR OpenMP Test with 32 threads
+**** Matrix 3 ****
+Time of OpenMP CSR SpMV: 0.009026 seconds
+Time of OpenMP CSR SpMV: 0.008984 seconds
+Time of OpenMP CSR SpMV: 0.009078 seconds
+Time of OpenMP CSR SpMV: 0.009406 seconds
+Time of OpenMP CSR SpMV: 0.008438 seconds
+Time of OpenMP CSR SpMV: 0.009647 seconds
+Time of OpenMP CSR SpMV: 0.007550 seconds
+Time of OpenMP CSR SpMV: 0.007338 seconds
+Time of OpenMP CSR SpMV: 0.008946 seconds
+Time of OpenMP CSR SpMV: 0.008797 seconds
+Time of OpenMP CSR SpMV: 0.009510 seconds
+-------------------
+CSC Sequential Test
+**** Matrix 1 ****
+Time of Squential CSC SpMV: 0.000330 seconds
+Time of Squential CSC SpMV: 0.000330 seconds
+Time of Squential CSC SpMV: 0.000339 seconds
+Time of Squential CSC SpMV: 0.000331 seconds
+Time of Squential CSC SpMV: 0.000331 seconds
+Time of Squential CSC SpMV: 0.000376 seconds
+Time of Squential CSC SpMV: 0.000342 seconds
+Time of Squential CSC SpMV: 0.000330 seconds
+Time of Squential CSC SpMV: 0.000476 seconds
+Time of Squential CSC SpMV: 0.000330 seconds
+Time of Squential CSC SpMV: 0.000331 seconds
+**** Matrix 2 ****
+Time of Squential CSC SpMV: 0.004914 seconds
+Time of Squential CSC SpMV: 0.004752 seconds
+Time of Squential CSC SpMV: 0.004793 seconds
+Time of Squential CSC SpMV: 0.005864 seconds
+Time of Squential CSC SpMV: 0.004915 seconds
+Time of Squential CSC SpMV: 0.004713 seconds
+Time of Squential CSC SpMV: 0.004777 seconds
+Time of Squential CSC SpMV: 0.004716 seconds
+Time of Squential CSC SpMV: 0.004847 seconds
+Time of Squential CSC SpMV: 0.004792 seconds
+Time of Squential CSC SpMV: 0.004814 seconds
+**** Matrix 3 ****
+Time of Squential CSC SpMV: 0.030053 seconds
+Time of Squential CSC SpMV: 0.028999 seconds
+Time of Squential CSC SpMV: 0.033137 seconds
+Time of Squential CSC SpMV: 0.031112 seconds
+Time of Squential CSC SpMV: 0.030118 seconds
+Time of Squential CSC SpMV: 0.029201 seconds
+Time of Squential CSC SpMV: 0.028841 seconds
+Time of Squential CSC SpMV: 0.030041 seconds
+Time of Squential CSC SpMV: 0.029155 seconds
+Time of Squential CSC SpMV: 0.029330 seconds
+Time of Squential CSC SpMV: 0.028895 seconds
+-------------------
+CSC OpenMP Test with 1 threads
+**** Matrix 1 ****
+Time of OpenMP CSC SpMV: 0.000700 seconds
+Time of OpenMP CSC SpMV: 0.000728 seconds
+Time of OpenMP CSC SpMV: 0.000723 seconds
+Time of OpenMP CSC SpMV: 0.000701 seconds
+Time of OpenMP CSC SpMV: 0.000697 seconds
+Time of OpenMP CSC SpMV: 0.000679 seconds
+Time of OpenMP CSC SpMV: 0.000668 seconds
+Time of OpenMP CSC SpMV: 0.000694 seconds
+Time of OpenMP CSC SpMV: 0.000661 seconds
+Time of OpenMP CSC SpMV: 0.000705 seconds
+Time of OpenMP CSC SpMV: 0.000741 seconds
+-------------------
+CSC OpenMP Test with 2 threads
+**** Matrix 1 ****
+Time of OpenMP CSC SpMV: 0.000566 seconds
+Time of OpenMP CSC SpMV: 0.000533 seconds
+Time of OpenMP CSC SpMV: 0.000568 seconds
+Time of OpenMP CSC SpMV: 0.000504 seconds
+Time of OpenMP CSC SpMV: 0.000540 seconds
+Time of OpenMP CSC SpMV: 0.000661 seconds
+Time of OpenMP CSC SpMV: 0.000589 seconds
+Time of OpenMP CSC SpMV: 0.000531 seconds
+Time of OpenMP CSC SpMV: 0.000513 seconds
+Time of OpenMP CSC SpMV: 0.000543 seconds
+Time of OpenMP CSC SpMV: 0.000552 seconds
+-------------------
+CSC OpenMP Test with 4 threads
+**** Matrix 1 ****
+Time of OpenMP CSC SpMV: 0.001016 seconds
+Time of OpenMP CSC SpMV: 0.000661 seconds
+Time of OpenMP CSC SpMV: 0.000584 seconds
+Time of OpenMP CSC SpMV: 0.000576 seconds
+Time of OpenMP CSC SpMV: 0.000606 seconds
+Time of OpenMP CSC SpMV: 0.000695 seconds
+Time of OpenMP CSC SpMV: 0.000682 seconds
+Time of OpenMP CSC SpMV: 0.002094 seconds
+Time of OpenMP CSC SpMV: 0.000625 seconds
+Time of OpenMP CSC SpMV: 0.000624 seconds
+Time of OpenMP CSC SpMV: 0.001219 seconds
+-------------------
+CSC OpenMP Test with 8 threads
+**** Matrix 1 ****
+Time of OpenMP CSC SpMV: 0.000789 seconds
+Time of OpenMP CSC SpMV: 0.000821 seconds
+Time of OpenMP CSC SpMV: 0.000767 seconds
+Time of OpenMP CSC SpMV: 0.000772 seconds
+Time of OpenMP CSC SpMV: 0.000815 seconds
+Time of OpenMP CSC SpMV: 0.000794 seconds
+Time of OpenMP CSC SpMV: 0.000991 seconds
+Time of OpenMP CSC SpMV: 0.000700 seconds
+Time of OpenMP CSC SpMV: 0.000747 seconds
+Time of OpenMP CSC SpMV: 0.000886 seconds
+Time of OpenMP CSC SpMV: 0.000737 seconds
+-------------------
+CSC OpenMP Test with 16 threads
+**** Matrix 1 ****
+Time of OpenMP CSC SpMV: 0.028757 seconds
+Time of OpenMP CSC SpMV: 0.032268 seconds
+Time of OpenMP CSC SpMV: 0.005648 seconds
+Time of OpenMP CSC SpMV: 0.007914 seconds
+Time of OpenMP CSC SpMV: 0.004977 seconds
+Time of OpenMP CSC SpMV: 0.011122 seconds
+Time of OpenMP CSC SpMV: 0.004363 seconds
+Time of OpenMP CSC SpMV: 0.012311 seconds
+Time of OpenMP CSC SpMV: 0.009461 seconds
+Time of OpenMP CSC SpMV: 0.010123 seconds
+Time of OpenMP CSC SpMV: 0.011442 seconds
+-------------------
+CSC OpenMP Test with 32 threads
+**** Matrix 1 ****
+Time of OpenMP CSC SpMV: 0.007146 seconds
+Time of OpenMP CSC SpMV: 0.007087 seconds
+Time of OpenMP CSC SpMV: 0.007086 seconds
+Time of OpenMP CSC SpMV: 0.007929 seconds
+Time of OpenMP CSC SpMV: 0.006938 seconds
+Time of OpenMP CSC SpMV: 0.006941 seconds
+Time of OpenMP CSC SpMV: 0.007238 seconds
+Time of OpenMP CSC SpMV: 0.006906 seconds
+Time of OpenMP CSC SpMV: 0.007081 seconds
+Time of OpenMP CSC SpMV: 0.008530 seconds
+Time of OpenMP CSC SpMV: 0.007223 seconds
+-------------------
+CSC OpenMP Test with 1 threads
+**** Matrix 2 ****
+Time of OpenMP CSC SpMV: 0.009949 seconds
+Time of OpenMP CSC SpMV: 0.009955 seconds
+Time of OpenMP CSC SpMV: 0.009394 seconds
+Time of OpenMP CSC SpMV: 0.009404 seconds
+Time of OpenMP CSC SpMV: 0.010104 seconds
+Time of OpenMP CSC SpMV: 0.009524 seconds
+Time of OpenMP CSC SpMV: 0.009478 seconds
+Time of OpenMP CSC SpMV: 0.010058 seconds
+Time of OpenMP CSC SpMV: 0.009498 seconds
+Time of OpenMP CSC SpMV: 0.009411 seconds
+Time of OpenMP CSC SpMV: 0.009496 seconds
+-------------------
+CSC OpenMP Test with 2 threads
+**** Matrix 2 ****
+Time of OpenMP CSC SpMV: 0.004958 seconds
+Time of OpenMP CSC SpMV: 0.005224 seconds
+Time of OpenMP CSC SpMV: 0.005370 seconds
+Time of OpenMP CSC SpMV: 0.005004 seconds
+Time of OpenMP CSC SpMV: 0.004932 seconds
+Time of OpenMP CSC SpMV: 0.005150 seconds
+Time of OpenMP CSC SpMV: 0.007462 seconds
+Time of OpenMP CSC SpMV: 0.005298 seconds
+Time of OpenMP CSC SpMV: 0.006736 seconds
+Time of OpenMP CSC SpMV: 0.005223 seconds
+Time of OpenMP CSC SpMV: 0.004982 seconds
+-------------------
+CSC OpenMP Test with 4 threads
+**** Matrix 2 ****
+Time of OpenMP CSC SpMV: 0.002861 seconds
+Time of OpenMP CSC SpMV: 0.003531 seconds
+Time of OpenMP CSC SpMV: 0.002884 seconds
+Time of OpenMP CSC SpMV: 0.004278 seconds
+Time of OpenMP CSC SpMV: 0.002749 seconds
+Time of OpenMP CSC SpMV: 0.002945 seconds
+Time of OpenMP CSC SpMV: 0.003526 seconds
+Time of OpenMP CSC SpMV: 0.002964 seconds
+Time of OpenMP CSC SpMV: 0.002933 seconds
+Time of OpenMP CSC SpMV: 0.002773 seconds
+Time of OpenMP CSC SpMV: 0.002932 seconds
+-------------------
+CSC OpenMP Test with 8 threads
+**** Matrix 2 ****
+Time of OpenMP CSC SpMV: 0.001700 seconds
+Time of OpenMP CSC SpMV: 0.001855 seconds
+Time of OpenMP CSC SpMV: 0.001785 seconds
+Time of OpenMP CSC SpMV: 0.001720 seconds
+Time of OpenMP CSC SpMV: 0.001879 seconds
+Time of OpenMP CSC SpMV: 0.002518 seconds
+Time of OpenMP CSC SpMV: 0.001719 seconds
+Time of OpenMP CSC SpMV: 0.002055 seconds
+Time of OpenMP CSC SpMV: 0.002069 seconds
+Time of OpenMP CSC SpMV: 0.001701 seconds
+Time of OpenMP CSC SpMV: 0.002259 seconds
+-------------------
+CSC OpenMP Test with 16 threads
+**** Matrix 2 ****
+Time of OpenMP CSC SpMV: 0.005340 seconds
+Time of OpenMP CSC SpMV: 0.003761 seconds
+Time of OpenMP CSC SpMV: 0.005394 seconds
+Time of OpenMP CSC SpMV: 0.006973 seconds
+Time of OpenMP CSC SpMV: 0.009047 seconds
+Time of OpenMP CSC SpMV: 0.008553 seconds
+Time of OpenMP CSC SpMV: 0.008087 seconds
+Time of OpenMP CSC SpMV: 0.026270 seconds
+Time of OpenMP CSC SpMV: 0.008954 seconds
+Time of OpenMP CSC SpMV: 0.057380 seconds
+Time of OpenMP CSC SpMV: 0.006530 seconds
+-------------------
+CSC OpenMP Test with 32 threads
+**** Matrix 2 ****
+Time of OpenMP CSC SpMV: 0.007615 seconds
+Time of OpenMP CSC SpMV: 0.007891 seconds
+Time of OpenMP CSC SpMV: 0.007863 seconds
+Time of OpenMP CSC SpMV: 0.007504 seconds
+Time of OpenMP CSC SpMV: 0.008647 seconds
+Time of OpenMP CSC SpMV: 0.008801 seconds
+Time of OpenMP CSC SpMV: 0.007643 seconds
+Time of OpenMP CSC SpMV: 0.008064 seconds
+Time of OpenMP CSC SpMV: 0.008484 seconds
+Time of OpenMP CSC SpMV: 0.008565 seconds
+Time of OpenMP CSC SpMV: 0.008366 seconds
+-------------------
+CSC OpenMP Test with 1 threads
+**** Matrix 3 ****
+Time of OpenMP CSC SpMV: 0.057969 seconds
+Time of OpenMP CSC SpMV: 0.058370 seconds
+Time of OpenMP CSC SpMV: 0.058721 seconds
+Time of OpenMP CSC SpMV: 0.056922 seconds
+Time of OpenMP CSC SpMV: 0.057371 seconds
+Time of OpenMP CSC SpMV: 0.056993 seconds
+Time of OpenMP CSC SpMV: 0.060423 seconds
+Time of OpenMP CSC SpMV: 0.056899 seconds
+Time of OpenMP CSC SpMV: 0.058477 seconds
+Time of OpenMP CSC SpMV: 0.057221 seconds
+Time of OpenMP CSC SpMV: 0.057425 seconds
+-------------------
+CSC OpenMP Test with 2 threads
+**** Matrix 3 ****
+Time of OpenMP CSC SpMV: 0.029206 seconds
+Time of OpenMP CSC SpMV: 0.029848 seconds
+Time of OpenMP CSC SpMV: 0.029141 seconds
+Time of OpenMP CSC SpMV: 0.029079 seconds
+Time of OpenMP CSC SpMV: 0.029024 seconds
+Time of OpenMP CSC SpMV: 0.031231 seconds
+Time of OpenMP CSC SpMV: 0.028789 seconds
+Time of OpenMP CSC SpMV: 0.028528 seconds
+Time of OpenMP CSC SpMV: 0.030767 seconds
+Time of OpenMP CSC SpMV: 0.028782 seconds
+Time of OpenMP CSC SpMV: 0.029974 seconds
+-------------------
+CSC OpenMP Test with 4 threads
+**** Matrix 3 ****
+Time of OpenMP CSC SpMV: 0.016530 seconds
+Time of OpenMP CSC SpMV: 0.015801 seconds
+Time of OpenMP CSC SpMV: 0.017210 seconds
+Time of OpenMP CSC SpMV: 0.015044 seconds
+Time of OpenMP CSC SpMV: 0.015442 seconds
+Time of OpenMP CSC SpMV: 0.021909 seconds
+Time of OpenMP CSC SpMV: 0.015674 seconds
+Time of OpenMP CSC SpMV: 0.015311 seconds
+Time of OpenMP CSC SpMV: 0.024071 seconds
+Time of OpenMP CSC SpMV: 0.014984 seconds
+Time of OpenMP CSC SpMV: 0.015752 seconds
+-------------------
+CSC OpenMP Test with 8 threads
+**** Matrix 3 ****
+Time of OpenMP CSC SpMV: 0.008769 seconds
+Time of OpenMP CSC SpMV: 0.008202 seconds
+Time of OpenMP CSC SpMV: 0.008858 seconds
+Time of OpenMP CSC SpMV: 0.011441 seconds
+Time of OpenMP CSC SpMV: 0.011063 seconds
+Time of OpenMP CSC SpMV: 0.008576 seconds
+Time of OpenMP CSC SpMV: 0.009228 seconds
+Time of OpenMP CSC SpMV: 0.010221 seconds
+Time of OpenMP CSC SpMV: 0.011363 seconds
+Time of OpenMP CSC SpMV: 0.008310 seconds
+Time of OpenMP CSC SpMV: 0.012287 seconds
+-------------------
+CSC OpenMP Test with 16 threads
+**** Matrix 3 ****
+Time of OpenMP CSC SpMV: 0.012680 seconds
+Time of OpenMP CSC SpMV: 0.006707 seconds
+Time of OpenMP CSC SpMV: 0.007573 seconds
+Time of OpenMP CSC SpMV: 0.006786 seconds
+Time of OpenMP CSC SpMV: 0.017810 seconds
+Time of OpenMP CSC SpMV: 0.008403 seconds
+Time of OpenMP CSC SpMV: 0.018798 seconds
+Time of OpenMP CSC SpMV: 0.012160 seconds
+Time of OpenMP CSC SpMV: 0.010893 seconds
+Time of OpenMP CSC SpMV: 0.014507 seconds
+Time of OpenMP CSC SpMV: 0.007549 seconds
+-------------------
+CSC OpenMP Test with 32 threads
+**** Matrix 3 ****
+Time of OpenMP CSC SpMV: 0.014833 seconds
+Time of OpenMP CSC SpMV: 0.014627 seconds
+Time of OpenMP CSC SpMV: 0.018864 seconds
+Time of OpenMP CSC SpMV: 0.015222 seconds
+Time of OpenMP CSC SpMV: 0.018731 seconds
+Time of OpenMP CSC SpMV: 0.015691 seconds
+Time of OpenMP CSC SpMV: 0.014833 seconds
+Time of OpenMP CSC SpMV: 0.014961 seconds
+Time of OpenMP CSC SpMV: 0.017659 seconds
+Time of OpenMP CSC SpMV: 0.018213 seconds
+Time of OpenMP CSC SpMV: 0.016895 seconds

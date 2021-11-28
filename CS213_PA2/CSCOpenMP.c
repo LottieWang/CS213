@@ -82,10 +82,10 @@ int writeArray(char* name, double* y, int n){
 }
 
 void MatrixVecMul(struct CSC matrix, double* x, double* y){
-    #pragma omp parallel for shared(y)
+    #pragma omp parallel for
     for (size_t i = 0; i<matrix.n2; i++){y[i]=0;}
 
-    #pragma omp parallel for shared(matrix, x, y)
+    #pragma omp parallel for
     for (size_t j = 0; j< matrix.n2; j++){
         for (size_t offset = matrix.col_index[j]; offset < matrix.col_index[j+1]; offset++){
             int i = matrix.raw_index[offset];
@@ -104,6 +104,7 @@ int main(int argc, char** argv){
     char* InputName = argv[1];
     int n_iters = atoi(argv[2]);
     int n_threads = atoi(argv[3]);
+    omp_set_num_threads(n_threads);//set number of threads here
     bool print_output;
     if (argc == 4) {
         print_output=false;
